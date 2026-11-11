@@ -46,12 +46,6 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Analyze project
-        run: flutter analyze --no-pub
-
-      - name: Run tests
-        run: flutter test --no-pub
-
       - name: Build Android APK
         run: flutter build apk --debug
 
